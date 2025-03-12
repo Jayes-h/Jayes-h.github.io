@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayesh Portfolio</title>
+
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!--
+      send emailjs api script
+   -->
+
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "OA4xK7uCIx7x1K56Q",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpg" alt="Jayesh Patil" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Jayesh Patil</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jayesh.patil0627@gmail.com" class="contact-link">jayesh.patil0627@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 9630271204</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 27, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Indore, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jayesh-patil-7ab42a203/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Jayes-h" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hey there! Welcome to my portfolio 🚀
+            I’m Jayesh Patil, a Software Engineer passionate about turning ideas into reality through clean, efficient code. But I’m not just about coding—I believe that great software is built by great teams. That’s why I’m equally skilled in people management, leadership, and collaboration.
+
+            I’m always eager to learn something new, whether it’s mastering a new technology, optimizing workflows, or understanding what makes a team tick. From crafting scalable web applications to leading teams and projects, I love solving problems and bringing innovative solutions to life. Whether it's full-stack development, system design, or guiding a team toward success, I thrive in both the technical and managerial worlds.
+
+            Feel free to explore my work, and if you’d like to collaborate, discuss ideas, or just have a chat, drop me a message! Let’s build something amazing together. 🚀
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i do</h3>
+
+          <ul class="service-list">
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="desktop app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">desktop apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for desktop.
+                </p>
+              </div>
+
+            </li>
+
+<!--            <li class="service-item">-->
+
+<!--              <div class="service-icon-box">-->
+<!--                <img src="./assets/images/icon-design.svg-->
+<!--                " alt="design icon" width="40">-->
+<!--              </div>-->
+
+<!--              <div class="service-content-box">-->
+<!--                <h4 class="h4 service-item-title">Problem Solver</h4>-->
+
+<!--                <p class="service-item-text">-->
+<!--                  The most modern and high-quality design made at a professional level.-->
+<!--                </p>-->
+<!--              </div>-->
+
+<!--            </li>-->
+
+            <!--            <li class="service-item">-->
+
+<!--              <div class="service-icon-box">-->
+<!--                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">-->
+<!--              </div>-->
+
+<!--              <div class="service-content-box">-->
+<!--                <h4 class="h4 service-item-title">Photography</h4>-->
+
+<!--                <p class="service-item-text">-->
+<!--                  I make high-quality photos of any category at a professional level.-->
+<!--                </p>-->
+<!--              </div>-->
+
+<!--            </li>-->
+
+          </ul>
+
+        </section>
+
+        <!--
+          Achievements And Certifications
+          -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Achievements And Certifications</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" style=" color: var(--orange-yellow-crayola)">AWS Cloud Foundation Certificate </h5>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 80%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" style=" color: var(--orange-yellow-crayola)">AMCAT Exam Certificate</h5>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 70%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" style=" color: var(--orange-yellow-crayola)">National Player Snooker </h5>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 90%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" style=" color: var(--orange-yellow-crayola)">Centralised Placement Cell Coordinator(ME) IET DAVV </h5>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" style=" color: var(--orange-yellow-crayola)">Core CITRONICS (successfully led and coordinated a dynamic team of over 100
+                  students) </h5>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" style=" color: var(--orange-yellow-crayola)">GDSC member</h5>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Arjun Patidar</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I am pleased to write this referral for Jayesh, who worked as a Full Stack Developer at Qualwebs. Having had the opportunity to mentor him, I have seen firsthand the dedication, technical expertise,
+                    and strong work ethic he brings to any project. Jayesh is a highly skilled developer with a deep understanding of both front-end and back-end technologies. His problem-solving abilities, adaptability,
+                    and eagerness to learn allowed him to contribute significantly to our team.
+                    Beyond his technical skills, he was a fantastic team player. His positive attitude, professionalism, and ability to collaborate seamlessly made him a great fit for the company culture.
+                    I strongly recommend Jayesh for any opportunity that comes his way. He would be a valuable asset to any organization,and I have no doubt he will continue to excel in his career.</p>
+                  <p>Best Regards</p>
+                  <p>Arjun Patidar</p>
+                  <p>Project Manager & Architect at Qualwebs</p>
+                </div>
+
+              </div>
+            </li>
+
+<!--            <li class="testimonials-item">-->
+<!--              <div class="content-card" data-testimonials-item>-->
+
+<!--                <figure class="testimonials-avatar-box">-->
+<!--                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>-->
+<!--                </figure>-->
+
+<!--                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>-->
+
+<!--                <div class="testimonials-text" data-testimonials-text>-->
+<!--                  <p>-->
+<!--                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a-->
+<!--                    lot of experience-->
+<!--                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt-->
+<!--                    consectetur adipiscing-->
+<!--                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.-->
+<!--                  </p>-->
+<!--                </div>-->
+
+<!--              </div>-->
+<!--            </li>-->
+
+<!--            <li class="testimonials-item">-->
+<!--              <div class="content-card" data-testimonials-item>-->
+
+<!--                <figure class="testimonials-avatar-box">-->
+<!--                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>-->
+<!--                </figure>-->
+
+<!--                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>-->
+
+<!--                <div class="testimonials-text" data-testimonials-text>-->
+<!--                  <p>-->
+<!--                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a-->
+<!--                    lot of experience-->
+<!--                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt-->
+<!--                    consectetur adipiscing-->
+<!--                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.-->
+<!--                  </p>-->
+<!--                </div>-->
+
+<!--              </div>-->
+<!--            </li>-->
+
+<!--            <li class="testimonials-item">-->
+<!--              <div class="content-card" data-testimonials-item>-->
+
+<!--                <figure class="testimonials-avatar-box">-->
+<!--                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>-->
+<!--                </figure>-->
+
+<!--                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>-->
+
+<!--                <div class="testimonials-text" data-testimonials-text>-->
+<!--                  <p>-->
+<!--                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a-->
+<!--                    lot of experience-->
+<!--                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt-->
+<!--                    consectetur adipiscing-->
+<!--                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.-->
+<!--                  </p>-->
+<!--                </div>-->
+
+<!--              </div>-->
+<!--            </li>-->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+                  <span style="float: right;">2024 — 2026</span>
+                  <h4 class="h4 timeline-item-title">Masters Of Engineering <data value="50" style=" color: var(--orange-yellow-crayola)">(Computer Science)</data></h4>
+
+                  <h6 class="h6 timeline-item-title">Institute Of Technology, DAVV</h6>
+
+              <p class="timeline-text">
+                CGPA : 7.84
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <span style="float: right;">2020 — 2024</span>
+              <h4 class="h4 timeline-item-title">Bachelors Of Technology <data value="50" style=" color: var(--orange-yellow-crayola)">(Computer Science)</data> </h4>
+              <h6 class="h6 timeline-item-title">Chameli Devi Group Of Institutions</h6>
+
+              <p class="timeline-text">
+                CGPA : 8.30
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <span style="float: right;">2019 — 2020</span>
+              <h4 class="h4 timeline-item-title">Senior Secondary Examination - XII </h4>
+              <h6 class="h6 timeline-item-title">Mar Thoma Public School</h6>
+
+
+<!--              <p class="timeline-text">-->
+<!--                Percentage : 69%-->
+<!--              </p>-->
+
+            </li>
+
+            <li class="timeline-item">
+
+              <span style="float: right;">2017 — 2018</span>
+              <h4 class="h4 timeline-item-title">Matriculation - X </h4>
+              <h6 class="h6 timeline-item-title">Mar Thoma Higher Secondary School</h6>
+
+
+<!--              <p class="timeline-text">-->
+<!--                Percentage : 72%-->
+<!--              </p>-->
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <span style="float: right;">Jan 2025 — Present</span>
+              <h4 class="h4 timeline-item-title">Centralized Placement Cell </h4>
+              <h4 class="h2 timeline-item-title">Full Stack Developer</h4>
+
+
+              <p class="timeline-text">
+                Working as a full stack developer for IET DAVV, developing a
+                centralized placement cell website for Institute Of Technology (DAVV).
+                This platform is designed to streamline the placement process by serving as a
+                unified hub for students, recruiters, and university administration. Our goal
+                is to enhance communication, provide real-time updates, and simplify access to
+                essential placement-related information. By ensuring a seamless and efficient
+                experience for all stakeholders, this user-friendly website will play a crucial
+                role in bridging the gap between students and career opportunities.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <span style="float: right;">Oct 2023 — Jul 2024</span>
+              <h4 class="h4 timeline-item-title">Qualwebs</h4>
+              <h4 class="h4 timeline-item-title">full Stack Developer</h4>
+
+
+              <p class="timeline-text">
+                Learned understanding of  responsive design principles using bootstrap for layout and styling.
+                Competence in NodeJS for server-side scripting and API development.
+                Familiarity with ElectronJS for building cross-platform desktop application.
+                Worked on design a databse ( system design ) .
+                Developed the ability to concurrently work on both frontend and backend components.
+                Gained experience in project planning, task management to deliver features on schedule
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages : </h5>
+                <data value="80" style=" color: var(--orange-yellow-crayola)">c/c++, Javascript , Java</data>
+              </div>
+
+<!--              <div class="skill-progress-bg">-->
+<!--                <div class="skill-progress-fill" style="width: 80%;"></div>-->
+<!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Frameworks : </h5>
+                <data value="70" style=" color: var(--orange-yellow-crayola)" >ReactJS, NodeJS, ElectronJS, ExpressJS, Collection-Framework</data>
+              </div>
+
+<!--              <div class="skill-progress-bg">-->
+<!--                <div class="skill-progress-fill" style="width: 70%;"></div>-->
+<!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Structure & Algorithems</h5>
+
+              </div>
+
+<!--              <div class="skill-progress-bg">-->
+<!--                <div class="skill-progress-fill" style="width: 90%;"></div>-->
+<!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Object Oriented Programming</h5>
+<!--                <data value="50">50%</data>-->
+              </div>
+
+<!--              <div class="skill-progress-bg">-->
+<!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+<!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Databases : </h5>
+                                <data value="50" style=" color: var(--orange-yellow-crayola)">MySql, Potgresql</data>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tools : </h5>
+                                <data value="50" style=" color: var(--orange-yellow-crayola)">SQL, Git, Postman</data>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SoftSkills : </h5>
+                <data value="50" style=" color: var(--orange-yellow-crayola)">Leadership, Team work, Problem solving, Good Communication </data>
+              </div>
+
+              <!--              <div class="skill-progress-bg">-->
+              <!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+              <!--              </div>-->
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/zomato.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://jayes-h.github.io/solveandslay/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/SolveAndSlay.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <!--                  <div class="blog-meta">-->
+                  <!--                    <p class="blog-category">Design</p>-->
+
+                  <!--                    <span class="dot"></span>-->
+
+                  <!--                    <time datetime="2022-02-23">Fab 23, 2022</time>-->
+                  <!--                  </div>-->
+
+                  <h3 class="h3 blog-item-title">SolveAndSlay</h3>
+
+                  <p class="blog-text">
+                  <ul class="blog-text">
+                    <li>
+                      I have developed an educational content-sharing website designed to help students learn, grow,
+                      and enhance their knowledge. This platform serves as a hub for educational resources, making it
+                      easier for students to access valuable content and expand their understanding of various
+                      subjects.
+
+                    </li>
+                    <li>
+                      With a focus on simplifying learning, the website provides well-structured materials that
+                      cater to different academic needs. Whether you're looking for study notes, tutorials, or
+                      insightful articles, this website aims to support students in their educational journey.
+
+
+
+            </li>
+
+          </ul>
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category">Design</p>-->
+
+<!--                    <span class="dot"></span>-->
+
+<!--                    <time datetime="2022-02-23">Fab 23, 2022</time>-->
+<!--                  </div>-->
+
+                  <h3 class="h3 blog-item-title">TraQuer</h3>
+
+                  <p class="blog-text">
+                    <ul class="blog-text">
+                  <li>
+                    Developed traQuer, an employee monitoring application aimed at improving
+                    punctuality and dedication to work.
+
+                  </li>
+                  <li>
+                    Implemented features for tracking daily work activities of employees, including
+                    project assignment by administrators and task creation by employees with time
+                    estimation.
+
+                  </li>
+                  <li>
+                    Designed a system to record time spent on tasks, facilitating better productivity
+                    management.
+
+                  </li>
+                  <li>
+                    Created the front-end of the application using reactJS, developed back-end APIs
+                    and routes using NodeJS.
+
+                  </li>
+                  <li>
+                    Created an application for Windows (.exe), macOS (.dmg), and Linux (.debian).
+
+                  </li>
+                </ul>
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://jayes-h.github.io/TheRedRockGymWebsite/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category">Design</p>-->
+
+<!--                    <span class="dot"></span>-->
+
+<!--                    <time datetime="2022-02-23">Fab 23, 2022</time>-->
+<!--                  </div>-->
+
+                  <h3 class="h3 blog-item-title">TheRedRockGym Website</h3>
+
+                  <p class="blog-text">
+                    A Freelancing project.
+                    Developed a comprehensive gym website with integrated email feature
+                    Implemented a user-friendly interface.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://zomatopage-clone.netlify.app/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category">Design</p>-->
+
+<!--                    <span class="dot"></span>-->
+
+<!--                    <time datetime="2022-02-23">Fab 23, 2022</time>-->
+<!--                  </div>-->
+
+                  <h3 class="h3 blog-item-title">Zomato Page Clone</h3>
+
+                  <p class="blog-text">
+                    Designed an interactive UI with smooth navigation, carousels, and engaging
+                    animations to enhance user experience. Implemented a fully responsive design,
+                    ensuring seamless adaptability across different devices.
+
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category">Design</p>-->
+
+<!--                    <span class="dot"></span>-->
+
+<!--                    <time datetime="2022-02-23">Fab 23, 2022</time>-->
+<!--                  </div>-->
+
+                  <h3 class="h3 blog-item-title">DB Hub</h3>
+
+                  <p class="blog-text">
+                    A project has been designed for a data management that enables the efficient
+                    management and manipulation of data, while also making it easily
+                    understandable for everyone.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://jayes-h.github.io/EASYDIGITS/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category">Design</p>-->
+
+<!--                    <span class="dot"></span>-->
+
+<!--                    <time datetime="2022-02-23">Fab 23, 2022</time>-->
+<!--                  </div>-->
+
+                  <h3 class="h3 blog-item-title">EASYDIGITS</h3>
+
+                  <p class="blog-text">
+                    Elevate your calculations with our EasyDigits. Designed for effortless math, it's the perfect blend of functionality and user-friendly design.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+<!--            <li class="blog-post-item">-->
+<!--              <a href="#">-->
+
+<!--                <figure class="blog-banner-box">-->
+<!--                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">-->
+<!--                </figure>-->
+
+<!--                <div class="blog-content">-->
+
+<!--                  <div class="blog-meta">-->
+<!--                    <p class="blog-category">Design</p>-->
+
+<!--                    <span class="dot"></span>-->
+
+<!--                    <time datetime="2022-02-23">Fab 23, 2022</time>-->
+<!--                  </div>-->
+
+<!--                  <h3 class="h3 blog-item-title">Design digest #79</h3>-->
+
+<!--                  <p class="blog-text">-->
+<!--                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.-->
+<!--                  </p>-->
+
+<!--                </div>-->
+
+<!--              </a>-->
+<!--            </li>-->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d318.47947736470167!2d75.90325275336978!3d22.80881820699985!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631cd27951ab61%3A0xef962d1e35f5fc53!2ssuper%20city%2C%20AE%2038%20B%2C%20gol%20chauraha%2C%20Gyanshila%20Twp%2C%20Dhabli%2C%20Indore%2C%20Madhya%20Pradesh%20453771!5e1!3m2!1sen!2sin!4v1741502338133!5m2!1sen!2sin"
+                    width="400" height="300"
+                     loading="lazy" ></iframe>
+
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form id="contactForm">
+            <div class="input-wrapper">
+              <input id="name" type="text" name="fullname" class="form-input" placeholder="Full name" required>
+
+              <input id="email" type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+            <button class="form-btn" type="submit" onclick="sendEmail()">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+<!--            <p id="formMessage"></p>-->
+          </form>
+        </section>
+
+
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
